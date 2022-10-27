@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8" />
+        <title>BadBank</title>
+        <!-- bootstrap css-->
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css">
+
+        //I copied de bootstrap link from getbootstrap.com. My questions are:
+        * Why does the link change? Why does it have a cdn at the beginning?
+        * During the module they used this href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+
+        <!-- dont use this in production:-->
+        <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+    </head>
+    <body>
+      <!-- we will put our react component inside this div -->
+      <div id="root"></div>
+
+      <!-- load react and router -->
+      <script crossorigin src="https://unpkg.com/react/umd/react.development.js"></script>
+      <script crossorigin src="https://unpkg.com/react-dom/umd/react-dom.development.js"></script>
+      <script crossorigin src="https://unpkg.com/react-router/umd/react-router.min.js"></script>
+      <script crossorigin src="https://unpkg.com/react-router-dom/umd/react-router-dom.min.js"></script>
+
+      <!-- load our react component -->
+      <script src="home.js"          defer type="text/babel"></script>
+      <script src="create.js"        defer type="text/babel"></script>
+      <script src="deposit.js"       defer type="text/babel"></script>
+      <script src="withdraw.js"      defer type="text/babel"></script>
+      <script src="alldata.js"       defer type="text/babel"></script>
+      <script src="nav.js"           defer type="text/babel"></script>
+      <script src="index.js"         defer type="text/babel"></script>
+
+    </body>
+</html>
